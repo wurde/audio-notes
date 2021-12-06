@@ -1,0 +1,35 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "serve": "serve out",
+    "hash": "node ./lib/create-hash.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity": "^3.42.0",
+    "@aws-sdk/client-s3": "^3.42.0",
+    "amazon-cognito-identity-js": "^5.2.3",
+    "bcrypt": "^5.0.1",
+    "next": "12.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.0.2",
+    "postcss": "^8.3.11",
+    "prettier": "2.4.1",
+    "serve": "^13.0.2",
+    "tailwindcss": "^2.2.19"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
