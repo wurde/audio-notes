@@ -137,6 +137,10 @@ terraform plan
 terraform apply
 ```
 
+## Preview Screenshot
+
+![Audio Notes Screenshot](./audionotes.png)
+
 ## License
 
 This project is __FREE__ to use, reuse, remix, and resell.
